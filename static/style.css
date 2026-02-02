@@ -464,6 +464,28 @@ footer { padding: 5rem 5%; border-top: 1px solid var(--border-color); }
         font-size: 0.9rem; /* Smaller name in nav */
     }
 
+   .skill-item {
+    background: linear-gradient(
+        to right,
+        #8B5CF6 0%,
+        #EC4899 40%,
+        #fff 50%,
+        #EC4899 60%,
+        #8B5CF6 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textShine 3s linear infinite;
+    
+    /* For borders/shadows on these items, we need separate properties 
+       because text-fill-color: transparent hides borders if not careful.
+    */
+    border-color: #EC4899;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+    }
+
     /* --- Hero Section --- */
     .hero {
         padding-top: 100px; /* Prevent nav from covering content */
@@ -497,7 +519,7 @@ footer { padding: 5rem 5%; border-top: 1px solid var(--border-color); }
     .hero-avatar {
         width: 200px;
         height: 200px; /* Scale down profile image */
-        margin-bottom: 1.5rem;
+        margin-bottom: -0.95rem;
     }
 
     h1 {
@@ -576,3 +598,4 @@ footer { padding: 5rem 5%; border-top: 1px solid var(--border-color); }
         word-break: break-all; 
     }
 }
+
