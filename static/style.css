@@ -373,6 +373,48 @@ footer { padding: 5rem 5%; border-top: 1px solid var(--border-color); }
 .email-link { font-size: 1.5rem; border-bottom: 1px solid var(--text-secondary); padding-bottom: 4px; color: var(--text-primary); }
 .footer-right { text-align: right; font-size: 0.85rem; }
 
+/* =========================================
+   SOCIAL LINKS (Footer)
+   ========================================= */
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary); /* Default Grey */
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hover Effect: Gradient Color & Glow */
+.social-icon:hover {
+    color: #EC4899; /* Fallback color */
+    
+    /* Apply gradient to the icon itself */
+    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    /* Add a subtle glow/border effect */
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+    transform: translateY(-3px);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 3rem; }
@@ -596,6 +638,13 @@ footer { padding: 5rem 5%; border-top: 1px solid var(--border-color); }
     .email-link {
         font-size: 1rem;
         word-break: break-all; 
+    }
+
+    .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 67px;
     }
 }
 
