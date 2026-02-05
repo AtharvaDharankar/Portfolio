@@ -48,4 +48,5 @@ def home():
 
     return render_template('index.html', user=user_info, projects=projects, skills=skills)
 
-app.run()
+if __name__ == "__main__":
+    app.run()
