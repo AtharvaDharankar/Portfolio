@@ -41,12 +41,13 @@ def home():
 
     # Skills (Pre-filled)
     skills = [
-        "Python", "Arduino", "Electromechanics", 
-        "Photography", "Sensors", "Circuit Design", 
+        "Python"," C  ","HTML","CSS","Pygame","Ursina" ,"Java","Arduino", 
+        "Photography", 
         "And Loading more skills...",
         ]
 
     return render_template('index.html', user=user_info, projects=projects, skills=skills)
 
 if __name__ == "__main__":
+
     app.run()
