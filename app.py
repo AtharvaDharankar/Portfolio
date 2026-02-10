@@ -41,8 +41,8 @@ def home():
 
     # Skills (Pre-filled)
     skills = [
-        "Python", "Arduino", "Electromechanics", 
-        "Photography", "Sensors", "Circuit Design", 
+        "Python", "HTML","CSS","C","Pygame","Ursina", "Arduino", 
+        "Photography", 
         "And Loading more skills...",
         ]
 
